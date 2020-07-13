@@ -1,0 +1,3 @@
+
+
+var HOME = "Home";

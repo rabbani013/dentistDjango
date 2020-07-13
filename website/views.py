@@ -2,7 +2,36 @@ from django.shortcuts import render
 from django.core.mail import send_mail
 
 # Create your views here.
+
+
+# def wiki_context_processor(request):
+#     return {
+#         'Business_Name': 'Dental World',
+# 			'Business_Address': 'Hous#01 Road#12 Sector#22 Uttara, Dhaka 1230, Bangladesh.',
+# 			'Business_Email': 'info@dentalworld.com',
+# 			'Facebook_Link': 'https://www.facebook.com/Sochetonota/',
+# 			'Twitter_Link': '#',
+# 			'Google_Plus_Link': '#',
+# 			'LinkedIn_Link': '#',
+#     }
+
+
+# def getWikiContext(self, view, request):
+#         context = {
+#             'Business_Name': 'Dental World',
+# 			'Business_Address': 'Hous#01 Road#12 Sector#22 Uttara, Dhaka 1230, Bangladesh',
+# 			'Business_Email': 'info@dentalworld.com',
+# 			'Facebook_Link': 'https://www.facebook.com/Sochetonota/',
+# 			'Twitter_Link': '#',
+# 			'Google_Plus_Link': '#',
+# 			'LinkedIn_Link': '#',
+#         }
+
+#         return context
+
+
 def home(request):
+	# context = wiki_context_processor(request)
 	return render(request, 'home.html', {})
 
 def contact(request):
@@ -25,6 +54,8 @@ def contact(request):
 	else:
 		return render(request, 'contact.html', {})
 
+def gallery(request):
+	return render(request, 'gallery.html', {})
 
 def about(request):
 	return render(request, 'about.html', {})

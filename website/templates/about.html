@@ -5,7 +5,7 @@
 {% block content %}
 
   <!-- ***** Breadcrumb Area Start ***** -->
-  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
+  <div class="container breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12">
@@ -14,9 +14,11 @@
       </div>
     </div>
   </div>
-  <div class="breadcumb--con">
-    <div class="container">
-      <div class="row">
+
+  
+  <div class="container breadcumb--con background_color">
+    <div class="containerr">
+      <div class="row ">
         <div class="col-12">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -30,9 +32,10 @@
   </div>
   <!-- ***** Breadcrumb Area End ***** -->
 
+
   <!-- ****** About Us Area Start ******* -->
-  <section class="dento-about-us-area mt-70">
-    <div class="container">
+  <section class="dento-about-us-area">
+    <div class="container background_color">
       <div class="row align-items-center">
         <!-- About Us Thumbnail -->
         <div class="col-12 col-md-6">
@@ -48,8 +51,7 @@
               <h2>About Us</h2>
               <div class="line"></div>
             </div>
-            <p>Vestibulum condimentum, risus sedones honcus rutrum, salah lacus mollis zurna, nec finibusmi velit advertisis. Proin vitae odin quis magna aliquet laciniae. Etiam auctor, nisi vel. Pellentesque ultrices nisl quam iaculis, nec pulvinar
-              augue.</p>
+            <p>{{ settings.ABOUT_US_TEXT }}</p>
 
             <!-- Single Skills Area -->
             <div class="single-skills-area mt-30">
@@ -90,7 +92,7 @@
 
   <!-- Cool Facts Area Start -->
   <section class="dento-cta-area">
-    <div class="container">
+    <div class="container background_color">
       <div class="row">
         <!-- Cool Facts Area -->
         <div class="col-12 col-sm-6 col-lg-3">
@@ -133,7 +135,7 @@
   <!-- Cool Facts Area End -->
 
   <!-- ***** Testimonials Area Start ***** -->
-  <section class="testimonials-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('{% static 'website/img/bg-img/7.jpg' %}');">
+  <section class="container testimonials-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('{% static 'website/img/bg-img/7.jpg' %}');">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -191,8 +193,8 @@
   <!-- ***** Testimonials Area End ***** -->
 
   <!-- ***** Dento Dentist Area Start ***** -->
-  <section class="dentist-area section-padding-100-0">
-    <div class="container">
+  <section class="dentist-area">
+    <div class="container background_color">
       <div class="row">
         <!-- Section Heading -->
         <div class="col-12">

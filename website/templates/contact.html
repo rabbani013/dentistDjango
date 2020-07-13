@@ -5,7 +5,7 @@
 {% block content %}
 
   <!-- ***** Breadcrumb Area Start ***** -->
-  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
+  <div class="container breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12">
@@ -14,7 +14,7 @@
       </div>
     </div>
   </div>
-  <div class="breadcumb--con">
+  <div class="container breadcumb--con background_color">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -39,12 +39,12 @@
     </center>
     <br><br><br>
   {% else %}
-  <section class="dento-contact-area mt-50 mb-100">
+  <section class="container dento-contact-area background_color">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <div class="google-maps mb-100">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.651055059057!2d90.38935626885296!3d23.8665216827023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c4197a8d8b49%3A0xd853bcc1eace97e9!2zMjPCsDUxJzU4LjciTiA5MMKwMjMnMjIuMiJF!5e0!3m2!1sen!2sbd!4v1593512996597!5m2!1sen!2sbd"
+            <iframe src="{{ settings.GOOGLE_MAP }}"
               allowfullscreen></iframe>
           </div>
         </div>
@@ -55,16 +55,16 @@
         <div class="col-12 col-md-4">
           <div class="contact-information">
             <h5>Address</h5>
-            <p>28 Jackson Street, Chicago, 7788569 USA</p>
+            <p>{{ settings.BUSINESS_ADDRESS }}</p>
 
             <h5>Phone</h5>
-            <p>+84. 2252. 2250. 122</p>
+            <p>{{ settings.BUSINESS_PHONE }}</p>
 
             <h5>Fax</h5>
-            <p>+84. 2252. 2250. 125</p>
+            <p>{{ settings.BUSINESS_FAX }}</p>
 
             <h5>Email</h5>
-            <p class="mb-0">info.dento@gmail.com</p>
+            <p class="mb-0">{{ settings.BUSINESS_EMAIL }}</p>
           </div>
         </div>
 
@@ -94,7 +94,7 @@
                 </div>
               </div>
             </form>
-
+            <br><br><br>
           </div>
         </div>
       </div>
